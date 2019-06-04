@@ -1,0 +1,448 @@
+* {
+    box-sizing: border-box;
+}
+
+/* Landing-Page StyleSheet */
+
+main {
+    align-items: center;
+    display: flex;
+    font-size: 18px;
+    height: 100vh;
+    justify-content: center;
+    overflow: hidden;
+    position: relative;
+    text-align: center;
+    transform-style: preserve-3d;
+    perspective: 100px;
+}
+
+main:before {
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, .8)),
+        url(https://www.bianconi-scuperta.com/wp-content/uploads/2018/05/Planning-An-Austin-Texas-Trip.jpg) no-repeat bottom;
+    background-size: cover;
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+}
+
+body {
+    background-color: antiquewhite;
+    margin: 0px;
+}
+
+.header-text {
+    padding: 10px;
+    background: rgba(50, 50, 50, .6);
+}
+
+.header-title {
+    font-size: 50px
+}
+
+.header-subtitle {
+    font-size: 30px;
+}
+
+.header-title,
+.header-subtitle {
+    color: #fff;
+}
+
+.header-subtitle {
+    margin-bottom: 5rem;
+}
+
+.header-button {
+    transform: translateZ(.1px);
+    position: relative;
+    z-index: 10;
+    display: inline-block;
+    border-radius: 4px;
+    background-color: #f4511e;
+    border: none;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 20px;
+    padding: 20px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
+}
+
+.header-button span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+
+.header-button span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+}
+
+.header-button:hover span {
+    padding-right: 25px;
+}
+
+.header-button:hover span:after {
+    opacity: 1;
+    right: 0;
+}
+
+.demo-text {
+    margin-top: 30px;
+    margin-bottom: 10px;
+    color: white;
+    font-size: 20px
+}
+
+.demo-button {
+    margin: 0px;
+    background: rgb(68, 117, 68);
+}
+
+/* Login/Register Form  */
+
+.signin-register {
+    background: rgba(44, 62, 80, 0.7);
+    padding: 40px;
+    width: auto;
+    margin: auto;
+    margin-top: 90px;
+    /* height: 400px; */
+    height: auto;
+    margin-left: 180x;
+    border-radius: 5px;
+
+}
+
+.signin-form,
+.register-form {
+    width: 240px;
+    text-align: center;
+}
+
+.form-input {
+    width: 240px;
+    text-align: center;
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid #fff;
+    font-family: 'Play', sans-serif;
+    font-size: 16px;
+    font-weight: 200px;
+    padding: 10px 0;
+    transition: border 0.5s;
+    outline: none;
+    color: #fff;
+    border-radius: 5px;
+}
+
+.login-button[type=submit] {
+    border: none;
+    width: 190px;
+    background: white;
+    color: #000;
+    font-size: 16px;
+    line-height: 25px;
+    padding: 10px 0;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+.login-button[type=submit]:hover {
+    color: #fff;
+    background-color: black;
+}
+
+.register-button {
+    border: none;
+    width: 190px;
+    background: white;
+    color: #000;
+    font-size: 16px;
+    line-height: 25px;
+    padding: 10px 0;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+.register-button:hover {
+    color: #fff;
+    background-color: black;
+}
+
+h2 {
+    color: white;
+
+}
+
+a {
+    color: yellow;
+    text-decoration: blink;
+}
+
+a:hover {
+    color: skyblue;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+::placeholder {
+    color: aliceblue;
+    opacity: 0.8;
+
+}
+
+/* Home Stylesheet */
+
+.trip-form {
+    margin-bottom: 100px;
+    margin-top: 100px;
+    display: none;
+}
+
+nav {
+    z-index: 1000;
+    font-family: monospace, Helvetica, Verdana, Geneva, sans-serif;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    margin: 0 auto;
+    width: 100%;
+    background-color: #222;
+}
+
+nav ul {
+    list-style-type: none;
+    text-align: left;
+}
+
+nav ul li {
+    display: inline-block;
+    text-align: center;
+    padding: 20px;
+    height: 2%;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    padding: 20px;
+}
+
+/* an underline appears at the bottom on hover of each link */
+
+nav ul li a:hover,
+nav ul li a:active {
+    border-bottom: 2px solid #ccc;
+    padding-bottom: 8px;
+}
+
+.pageintro {
+    padding: 150px 0 130px 50px;
+}
+
+.pageintro section {
+    display: block;
+    max-width: 45%;
+    word-wrap: break-word;
+}
+
+.intro-heading {
+    margin-bottom: 20px;
+    font-size: 4rem;
+}
+
+.pageintro p:first-of-type {
+    margin-bottom: 30px;
+}
+
+.pageintro p:last-of-type {
+    text-transform: uppercase;
+}
+
+.trip-button {
+    font-size: 20px;
+    margin-top: 60px;
+    display: inline-block;
+    padding: 8px 18px 10px;
+    text-transform: uppercase;
+    border: 1px solid;
+    color: #FFFFFF;
+    background-color: #36D68C;
+    border-color: #36D68C;
+}
+
+.trip-button:hover {
+    color: inherit;
+    background-color: transparent;
+    border-color: inherit;
+}
+
+.logo {
+    position: absolute;
+    top: 200px;
+    left: 800px;
+}
+
+.logo img {
+    width: 150%;
+}
+
+/* Trip Form  */
+
+.tripForm {
+    border-radius: 10px;
+    margin-top: 150px;
+    padding: 20px;
+    /* padding: 1em; */
+    background: #f9f9f9;
+    border: 1px solid #c1c1c1;
+    margin-top: 2rem;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    /* padding: 1em; */
+}
+
+.tripForm input {
+    margin-bottom: 1rem;
+    background: #fff;
+    border: 1px solid #9c9c9c;
+    padding: 0.7em;
+}
+
+.tripForm button {
+    background: lightgrey;
+    padding: 0.7em;
+    border: 0;
+}
+
+.tripForm button:hover {
+    background: gold;
+}
+
+label {
+    text-align: right;
+    display: block;
+    padding: 0.5em 1.5em 0.5em 0;
+}
+
+.tripForm input:focus {
+    outline: 3px solid gold;
+}
+
+
+.hidden {
+    display: none
+}
+
+#message {
+    font-family: monospace, Helvetica, Verdana, Geneva, sans-serif;
+    padding-top: 120px;
+    padding-left: 30px;
+    font-size: 35px;
+    color: red;
+}
+
+/* Trip Cards  */
+
+section ul {
+    list-style: none;
+    padding: 100px 50px;
+    /* padding: 0; */
+    margin: 0;
+}
+
+section ul li {
+    padding: 10px;
+    max-width: 500px;
+}
+
+#cards {
+    flex-wrap: wrap;
+    display: flex;
+    list-style: none;
+}
+
+.cards__item {
+    padding: 15px;
+    flex: 1;
+}
+
+.card {
+    height: 100%;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.932);
+    box-shadow: 0 10px 10px rgba(0, 0, 0, .30);
+    transition: all 300ms cubic-bezier(.02, .01, .47, 1);
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    margin-bottom: 10px;
+}
+
+.card:hover {
+    box-shadow: 0 20px 20px rgba(0, 0, 0, .16);
+    transform: translate(0, -5px);
+    transition-delay: 0s !important;
+}
+
+
+.card__content {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+
+.card__title {
+    height: 40px;
+    font-size: 15px;
+    font-family: 'Roboto', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-weight: bolder;
+    color: #333333;
+    text-transform: uppercase;
+}
+
+.card__text {
+    font-family: 'Roboto', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-size: 12px;
+    line-height: 20px;
+    margin-bottom: 20px;
+    color: #4B4F56;
+}
+
+li p {
+    margin: 5px;
+}
+
+.close {
+    position: absolute;
+    top: 0;
+    right: 10px;
+    font-size: 42px;
+    color: #333;
+    transform: rotate(45deg);
+    cursor: pointer;
+}
+
+.edit-button {
+    margin: 5px 0px 10px 0px;
+    width: 100%;
+}
+

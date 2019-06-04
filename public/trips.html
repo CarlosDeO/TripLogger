@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Node-Capstone</title>
+    <meta name="author" content="name">
+    <meta name="description" content="description here">
+    <meta name="keywords" content="keywords,here">
+    <link rel="stylesheet" href="main.css" type="text/css">
+    <link rel="stylesheet" href="responsive.css" type="text/css">
+</head>
+
+<body>
+
+    <nav>
+        <ul>
+            <li><a href="/trips.html">Home</a></li>
+            <li><a id="profile" href="/profile.html">Profile</a></li>
+            <li><a id="logout" href="#">Logout</a></li>
+        </ul>
+    </nav>
+
+    <div class="pageintro">
+
+        <section>
+            <h3 class="intro-heading">Welcome to Trip Logger</h3>
+            <p>“To Travel is to Live” – Hans Christian Andersen</p>
+            <p>Getting ready to go on vaction or a work trip? Have all your trip information stored in one location</p>
+            <button type="button" class="trip-button">New Trip</button>
+        </section>
+
+    </div>
+    <section class="logo"> 
+        <img src="http://chittagongit.com/images/traveling-icon/traveling-icon-18.jpg" alt="">
+    </section>
+
+
+    <section class="trip-form">
+
+        <form class="tripForm" action="">
+            <label for="tripName">Trip Name</label>
+            <input id="tripName" type="text" required>
+
+            <legend>Flight</legend>
+            <label for="boarding" class="boarding">Boarding</label>
+            <input id="boarding" type="time">
+
+            <label for="departure" class="departure">Departure </label>
+            <input id="departure" type="time">
+
+            <label for="arival">Arrival</label>
+            <input id="arival" type="time">
+
+            <label for="terminal">Terminal</label>
+            <input id="terminal" type="text">
+
+            <label for="gate">Gate</label>
+            <input id="gate" type="text">
+
+            <legend>Hotel Info</legend>
+
+            <label for="hotelName">Name</label>
+            <input id="hotelName" type="text">
+
+            <label for="building">Building</label>
+            <input id="building" type="text">
+
+            <label for="street">Street</label>
+            <input id="street" type="text">
+
+            <label for="zipcode">Zipcode</label>
+            <input id="zipcode" type="number">
+
+            <label for="check-in">Check-in</label>
+            <input id="check-in" type="time">
+
+            <label for="check-out">Check-out</label>
+            <input id="check-out" type="time">
+
+            <legend>Car Rental</legend>
+
+            <label for="carRental-name">Name</label>
+            <input id="carRental-name" type="text">
+
+            <label for="confirmation" class="last-name">Confirmation #</label>
+            <input id="confirmation" type="text">
+
+            <!-- <legend>Activities</legend>
+
+            <label for="activeName">Name</label>
+            <input id="activeName" type="text">
+
+            <label for="activeDate">Date</label>
+            <input id="activeDate" type="date">
+
+            <label for="activeTime">Time</label>
+            <input id="activeTime" type="time"> -->
+
+            <!-- <label for="activeName">Name</label>
+            <input id="activeName" type="text">
+
+            <label for="activeDate">Date</label>
+            <input id="activeDate" type="text">
+
+            <label for="activeTime">Time</label>
+            <input id="activeTime" type="text"> -->
+            <button class="submit-form" type="submit">Submit</button>
+
+        </form>
+
+    </section>
+
+
+
+</body>
+<script src="https://code.jquery.com/jquery-3.2.1.min.js"
+    integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+<script src="index.js" type="text/javascript" charset="utf-8"></script>
+<script src="main.js" type="text/javascript" charset="utf-8"></script>
+
+</html>
