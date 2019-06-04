@@ -80,6 +80,6 @@ No more needing to check various emails.
 	<li>GET to '/api/trips/:id' to view a single trip by ID</li>
 	<li>POST to '/api/trips' to create new trip entry</li>
 	<li>PUT to '/api/trips/:id' to edit an exciting trip by ID</li>
-  <li>DELETE to '/api/trips/:id' to delete a single trip by ID/li>
+        <li>DELETE to '/api/trips/:id' to delete a single trip by ID</li>
 </ul>
 
