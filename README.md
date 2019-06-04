@@ -39,6 +39,13 @@ No more needing to check various emails.
 ![User's Profile](public/Images/Profile-Page.png)
 
 
+<h2>Password Requirements</h2>
+<ul>
+	<li>Minimum 10 characters</li>
+	<li>Maximum 72 characters</li>
+</ul>
+
+
 <h2>SECURITY</h2>
 <ul>
 	<li>Application uses JWT authentication </li>
