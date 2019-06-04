@@ -148,6 +148,21 @@ body {
     border-radius: 5px;
 }
 
+.trippform {
+    text-align: center;
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid #fff;
+    font-family: 'Play', sans-serif;
+    font-size: 16px;
+    font-weight: 200px;
+    padding: 10px 0;
+    transition: border 0.5s;
+    outline: none;
+    color: #fff;
+    border-radius: 5px;
+}
+
 .login-button[type=submit] {
     border: none;
     width: 190px;
@@ -306,12 +321,19 @@ nav ul li a:active {
 
 /* Trip Form  */
 
+.formText {
+        font-size: 20px;
+        font-weight: bold;
+    }
+
+
 .tripForm {
     border-radius: 10px;
     margin-top: 150px;
     padding: 20px;
     /* padding: 1em; */
-    background: #f9f9f9;
+    background: rgba(44, 62, 80, 0.7);
+    /* background: #f9f9f9; */
     border: 1px solid #c1c1c1;
     margin-top: 2rem;
     max-width: 600px;
@@ -322,8 +344,8 @@ nav ul li a:active {
 
 .tripForm input {
     margin-bottom: 1rem;
-    background: #fff;
-    border: 1px solid #9c9c9c;
+    /* background: #fff;
+    border: 1px solid #9c9c9c; */
     padding: 0.7em;
 }
 
@@ -446,3 +468,19 @@ li p {
     width: 100%;
 }
 
+.edit-button:hover {
+    cursor: pointer;
+    color: inherit;
+    background-color: transparent;
+    border-color: inherit;
+    border-radius: 5px;
+   
+}
+
+.delete-button:hover {
+    border-radius: 5px;
+    cursor: pointer;
+    color: inherit;
+    background-color: transparent;
+    border-color: inherit;
+}
