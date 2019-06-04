@@ -20,22 +20,21 @@ No more needing to check various emails.
 
  May preview a working prototype at [Trip Logger Demo](https://protected-basin-48207.herokuapp.com/index.html)
  
-<h3>Landing Page</h3>
-![Landing Page](public/Images/Landing-Page.png)
+![Landing Page(public/Images/Landing-Page.png)
 
-<h3>Landing Page</h3>
+
 ![User Login](public/Images/Loggin-Page.png)
 
-<h3>User Registration Page</h3>
+
 ![User Registration Page](public/Images/Registration-Page.png)
 
-<h3>User's Home Page</h3>
+
 ![User's Home](public/Images/Home-Page.png)
 
-<h3>Trip Form</h3>
+
 ![Trip Form](public/Images/TripForm-Page.png)
 
-<h3>User's Profile Page</h3>
+
 ![User's Profile](public/Images/Profile-Page.png)
 
 
